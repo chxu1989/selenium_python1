@@ -18,7 +18,7 @@ class managerLogin(unittest.TestCase):
                                          
         self.loginpage=LoginPage.LoginPage()
         self.url=self.loginpage.url1
-        self.driver=self.loginpage.driver
+        self.driver=self.loginpage.get_driver()
 
 
     def test_01(self):
@@ -76,7 +76,7 @@ class customerLogin(unittest.TestCase):
                                           
         self.loginpage=LoginPage.LoginPage()
         self.url=self.loginpage.url2
-        self.driver=self.loginpage.set_brower()
+        self.driver=self.loginpage.get_driver()
  
  
     def test_01(self):
@@ -131,7 +131,7 @@ class salesLogin(unittest.TestCase):
                                           
         self.loginpage=LoginPage.LoginPage()
         self.url=self.loginpage.url3
-        self.driver=self.loginpage.set_brower()    
+        self.driver=self.loginpage.get_driver()    
  
  
     def test_01(self):

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wisetrader>
     <manager>
-		<login url="https://trade.iwisetrader.com/Login/Manager/ManagerLogin">
+		<login url="http://192.168.1.111/WiseTrader_LoginCenter/Manager/ManagerLogin">
 		    <useraccount elemtype="id" elemvalue="form-username">
 		        <ac>6660021111</ac>
 		        <ac>666011</ac>

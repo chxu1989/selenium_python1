@@ -6,6 +6,7 @@ def driverPath():
 
 
 def baseUrl():
+    return 'http://192.168.1.111/WiseTrader_LoginCenter/Manager/ManagerLogin'
     return 'https://trade.iwisetrader.com/'
 
 

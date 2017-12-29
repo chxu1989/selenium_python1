@@ -25,12 +25,14 @@ class LoginPage(BasePage):
 
     def __init__(self,):
         self.driver=BasePage.__init__(self, 'ff') 
-          
+
+
+    def get_driver(self):
+        self.driver=self.driver
+        return self.driver          
         
     #输入账号操作
-    def set_username(self,username=username1[3]):
-        
-               
+    def set_username(self,username=username1[3]):               
         userinputbox=self.findElement((self.username1[1],self.username1[2]))
         self.type(userinputbox, username)
     
@@ -43,23 +45,18 @@ class LoginPage(BasePage):
     def click_login_button(self):
         lg_butn = self.findElement((self.login_btn1[1],self.login_btn1[2]))
         self.click(lg_butn)
+        
        
     def get_error_info(self):
         err_info=self.findElement((self.error_info1[1],self.error_info1[2])).text          
         return err_info
-        
-    
-    
-    def openPage(self,url):
-        js='window.open("{value}")'.format(value=url)
-        self.driver.execute_script(js)
-        self.driver.switch_to_window(self.driver.window_handles[1])       
+              
     
     def closedriver(self):
         """
         Close driver!
         """
-        self.driver.close()
+        self.close()
     
 if __name__==('__main__'):
     test1=LoginPage()
