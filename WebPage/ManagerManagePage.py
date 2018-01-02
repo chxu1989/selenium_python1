@@ -103,7 +103,7 @@ class AddManagerPage(BasePage):
     def click_add(self):
         
         self.click(self.findElement((self.clickAdd[1],self.clickAdd[2])))
-        self.switch_to_latestWindow()
+        #self.switch_to_latestWindow()
         
     def click_revise(self,manager_count):
         tup=self.get_firstcols(manager_count)
@@ -178,7 +178,7 @@ class AddManagerPage(BasePage):
           
         self.click(self.findElement((self.submitBtn[1],self.submitBtn[2])))
         self.driver.implicitly_wait(30)
-        self.switch_to_latestWindow()
+        #self.switch_to_latestWindow()
         
     
     #确认添加成功

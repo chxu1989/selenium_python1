@@ -16,7 +16,7 @@ class ManagerManage(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.am=ManagerManagePage.AddManagerPage()
-        cls.driver=cls.am.get_driver()
+        #cls.driver=cls.am.get_driver()
         cls.loginmanager=LoginAction()
         cls.loginmanager.login_manager(cls.driver)                            
         cls.url=cc.baseUrl()+cls.am.url1
@@ -52,7 +52,7 @@ class ManagerManage(unittest.TestCase):
         self.am.set_alert_lots()
         self.am.set_manager_name('test-01')
         self.am.select_langue()
-        self.am.set_email('')
+        self.am.set_email()
         self.am.select_role()
         self.am.click_submit()
         #WebDriverWait(self.driver, 20, 0.5).until(EC.presence_of_element_located(locator))
