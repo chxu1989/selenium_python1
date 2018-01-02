@@ -8,3 +8,4 @@ encoding//common/ScreenShots.py=utf-8
 encoding//test_case/run_test.py=utf-8
 encoding//test_case/test_login.py=utf-8
 encoding//test_case/test_manager_manage.py=utf-8
+encoding//test_case/test_rate_manage.py=utf-8

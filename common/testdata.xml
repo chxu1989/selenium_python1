@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wisetrader>
     <manager>
-		<login url="http://192.168.1.111/WiseTrader_LoginCenter/Manager/ManagerLogin">
+		<login url="https://trade.iwisetrader.com/Login/Manager/ManagerLogin">
 		    <useraccount elemtype="id" elemvalue="form-username">
-		        <ac>6660021111</ac>
+		        <ac>9000000001</ac>
 		        <ac>666011</ac>
 				<ac>6660021111</ac>
 			</useraccount>
@@ -40,10 +40,10 @@
 			</manage_search_func>
 			<manage_add_func>
 			    <add_manager_account1 elemtype="id" elemvalue="Account1">
-			    	 <add1>666</add1>
+			    	 <add1>900</add1>
 			    </add_manager_account1>
 			    <add_manager_account3 elemtype="id" elemvalue="Account3">
-			    	 <add3>1111</add3>
+			    	 <add3>0002</add3>
 			    </add_manager_account3>
 			    <acc_dup_err elemtype="id" elemvalue="error_ManagersNo">
 			         <ei>账号已存在</ei>
