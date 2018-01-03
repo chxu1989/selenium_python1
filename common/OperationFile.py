@@ -92,24 +92,9 @@ class OperationXml():
                         if value.startswith('\n\t'):              
                             elemdata.remove(value)  
         list2=testcase_info+elemdata       
-        return list2    
-    
-    
-    #获取要执行的testcasename，去掉含‘#’的
-#     def get_excutename(self):
-#         #获取根节点
-#         for x in range(len(self.manager_node)):
-#             child_node=self.manager_node[x].getchildren()
-#             excute_testcase=[item.attrib['excutename'] for item in  child_node]
-#             condition =lambda item: not item.startswith('#') 
-#             excute_testcase=filter(condition,excute_testcase)
-#         return excute_testcase
-
-  
-
+        return list2
                 
-  
-        
+       
         
     
 if __name__==('__main__'):

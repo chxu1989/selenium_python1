@@ -40,7 +40,7 @@ class ManagerManage(unittest.TestCase):
          
         u"""新增管理员"""     
         self.am.click_add()        
-        for backAccount in range(1111,9999):
+        for backAccount in range(0000,9999):
             self.am.set_fron_account()
             self.am.set_back_account(backAccount)
             self.am.click_submit()
