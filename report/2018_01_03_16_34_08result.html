@@ -123,9 +123,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">自动化测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> cx</p>
-<p class='attribute'><strong>开始时间 : </strong> 2018-01-02 18:20:10</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:01:00.133000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 9，通过 5，失败 1，错误 3，通过率= 55.56%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-01-03 16:34:08</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:59.138000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 8，通过 6，失败 2，通过率= 75.00%</p>
 
 <p class='description'></p>
 </div>
@@ -133,10 +133,10 @@ function html_escape(s) {
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 55.56% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 5 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 9 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 75.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 2 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 6 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 8 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -156,84 +156,36 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='errorClass warning'>
+<tr class='failClass warning'>
     <td>test_login.customerLogin: 客户登录测试</td>
     <td class="text-center">2</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center">2</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_01: 登录成功</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">  -->
-
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in">
-    <pre>
-    
-ft1_1: Traceback (most recent call last):
-  File "C:\Users\selenium_python1\test_case\test_login.py", line 77, in setUp
-    self.loginpage=LoginPage.LoginPage()
-  File "C:\Users\selenium_python1\WebPage\LoginPage.py", line 27, in __init__
-    self.driver=BasePage.__init__(self, 'ff')
-  File "C:\Users\selenium_python1\WebPage\BasePage.py", line 26, in __init__
-    driver = webdriver.Firefox()
-  File "C:\Python27\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 154, in __init__
-    keep_alive=True)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 151, in __init__
-    self.start_session(desired_capabilities, browser_profile)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 240, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 308, in execute
-    self.error_handler.check_response(response)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
-    raise exception_class(message, screen, stacktrace)
-WebDriverException: Message: Process unexpectedly closed with status: 0
-
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_01: 登录成功</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_02: 账号不正确</div></td>
+    <td class='failCase'><div class='testcase'>test_02: 账号不正确</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
     <div id='div_ft1_2' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
     <div id='div_ft1_2' class="collapse in">
     <pre>
     
 ft1_2: Traceback (most recent call last):
-  File "C:\Users\selenium_python1\test_case\test_login.py", line 77, in setUp
-    self.loginpage=LoginPage.LoginPage()
-  File "C:\Users\selenium_python1\WebPage\LoginPage.py", line 27, in __init__
-    self.driver=BasePage.__init__(self, 'ff')
-  File "C:\Users\selenium_python1\WebPage\BasePage.py", line 26, in __init__
-    driver = webdriver.Firefox()
-  File "C:\Python27\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 154, in __init__
-    keep_alive=True)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 151, in __init__
-    self.start_session(desired_capabilities, browser_profile)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 240, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 308, in execute
-    self.error_handler.check_response(response)
-  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
-    raise exception_class(message, screen, stacktrace)
-WebDriverException: Message: Process unexpectedly closed with status: 1
-
+  File "C:\Users\selenium_python1\test_case\test_login.py", line 104, in test_02
+    assert (self.loginpage.error_info1[3].decode('utf-8') ==self.loginpage.get_error_info())
+AssertionError
 
 
     </pre>
@@ -316,45 +268,13 @@ AssertionError
     </td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>unittest.suite._ErrorHolder</td>
-    <td class="text-center">1</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center">1</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c5',1)" class="detail" id='c5'>详细</a></td>
-</tr>
-
-<tr id='ft5_1' class='none'>
-    <td class='errorCase'><div class='testcase'>ManagerManage)</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft5_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft5_1'>错误</button>
-    <div id='div_ft5_1' class="collapse">  -->
-
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft5_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft5_1'>错误</button>
-    <div id='div_ft5_1' class="collapse in">
-    <pre>
-    
-ft5_1: Traceback (most recent call last):
-  File "C:\Users\selenium_python1\test_case\test_rate_manage.py", line 21, in setUpClass
-    cls.loginmanager.login_manager(cls.driver)
-AttributeError: type object 'ManagerManage' has no attribute 'driver'
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>9</td>
-    <td>5</td>
-    <td>1</td>
-    <td>3</td>
-    <td>通过率：55.56%</td>
+    <td>8</td>
+    <td>6</td>
+    <td>2</td>
+    <td>0</td>
+    <td>通过率：75.00%</td>
 </tr>
 </table>
 

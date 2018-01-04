@@ -14,13 +14,16 @@ class LoginAction(object):
     login_btn1=readXml.ReadXml('login', 'login_btn')
     error_info1=readXml.ReadXml('login', 'err_info')
     #管理员登录url
-    url1=username1[0]
+    url_wt1=username1[0]
+    url_mt1=url_wt1.replace('/Login/','/Login1/')
     
     #客户登录url    
-    url2=url1.replace('Manager','Client')
+    url_wt2=url_wt1.replace('Manager','Client')
+    url_mt2=url_wt2.replace('/Login/','/Login1/')
     
     #经纪人登录url
-    url3=url1.replace('Manager','Sales')
+    url_wt3=url_wt1.replace('Manager','Sales')
+    url_mt3=url_wt3.replace('/Login/','/Login1/')
     
     
     
@@ -64,7 +67,7 @@ class LoginAction(object):
          
         self.driver=driver         
                             
-        self.driver.get(self.url1)      
+        self.driver.get(self.url_wt1)      
         self.driver.implicitly_wait(30)
        
         self.findElement((self.username1[1],self.username1[2])).send_keys(self.username1[3])
@@ -80,7 +83,7 @@ class LoginAction(object):
         
         self.driver=driver         
                             
-        self.driver.get(self.url1)      
+        self.driver.get(self.url_wt2)      
         self.driver.implicitly_wait(30)
        
         self.findElement((self.username1[1],self.username1[2])).send_keys(self.username1[3])
@@ -95,7 +98,7 @@ class LoginAction(object):
         
         self.driver=driver         
                             
-        self.driver.get(self.url1)      
+        self.driver.get(self.url_wt3)      
         self.driver.implicitly_wait(30)
        
         self.findElement((self.username1[1],self.username1[2])).send_keys(self.username1[3])
