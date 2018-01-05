@@ -31,8 +31,8 @@ class LoginPage(BasePage):
 
 
     def get_driver(self):
-        self.driver=self.driver
-        return self.driver          
+        driver=self.driver
+        return driver          
         
     #输入账号操作
     def set_username(self,username=username1[3]):               
@@ -60,6 +60,10 @@ class LoginPage(BasePage):
         Close driver!
         """
         self.close()
+        
+    def screenshot(self,path):
+        targetpath=path
+        self.getScreenshot(targetpath)
     
 if __name__==('__main__'):
     test1=LoginPage()

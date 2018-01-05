@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 import unittest
-import time
+import time,sys
 from WebPage import LoginPage
-#from WebPage import BasePage
-#import HTMLTestRunnerCN
+from common import CreateFolder as cf
 u"""
 修改人：cx
 修改时间：2017.12.20
@@ -65,6 +64,11 @@ class managerLogin(unittest.TestCase):
         print self.loginpage.get_error_info()       
     
     def tearDown(self):
+        print sys.exc_info()[0]
+        if sys.exc_info()[0]:
+            path1=cf.CreateRunFolder('C:\\screenshot\\')
+            filename='{}\\{}_{}.png'.format(path1, self.__class__.__name__,self._testMethodName)
+            self.loginpage.screenshot(filename)
         self.loginpage.closedriver()
         
         
