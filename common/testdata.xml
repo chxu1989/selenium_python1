@@ -186,5 +186,75 @@
 		     </rate_add_func>
 		     <add_btn elemtype="xpath" elemvalue="/html/body/h3/span/button"></add_btn>   
 		</rate_manage>
+		<customer_group_manage attach_url="Manager1/Manager/CustomerGroupsList">
+		    <add_btn elemtype="xpath" elemvalue="/html/body/h3/div/button"></add_btn>
+		    <customer_group_add>
+		         <customer_group_name elemtype="name" elemvalue="Info.Name">
+		              <group_name>测试-mo</group_name>
+		         </customer_group_name>
+		         <customer_group_pricetype elemtype="name" elemvalue="Info.PriceType">
+		               <group_pricetype>1</group_pricetype>
+		         </customer_group_pricetype>
+		         <customer_group_cutmargin elemtype="name" elemvalue="Info.CutMarginMethod">
+		               <group_cutmargin>1</group_cutmargin>
+		         </customer_group_cutmargin>
+		          <customer_group_margintype elemtype="name" elemvalue="Info.MarginType">
+		               <group_margintype>2</group_margintype>
+		         </customer_group_margintype>
+		         <customer_group_allow elemtype="name" elemvalue="Info.AllowLimitOrderStop">
+		               <group_allow>1</group_allow>
+		         </customer_group_allow>
+		         <customer_group_product elemtype="xpath" elemvalue="/html/body/form[2]/div/div/div[3]/small/i"> </customer_group_product>
+		         <customer_group_sproduct elemtype="name" elemvalue="trade_type_name">
+		                <group_product>1</group_product>
+		         </customer_group_sproduct>
+		         <customer_group_commission elemtype="name" elemvalue="Commission">
+		               <group_commission>100</group_commission>
+		         </customer_group_commission>
+		         <customer_group_sostandard elemtype="name" elemvalue="SpreadOverStandard">
+		               <group_sostandard>0</group_sostandard>
+		         </customer_group_sostandard>
+		         <customer_group_typemax elemtype="name" elemvalue="TradeTypeMaxTradeSize">
+		               <group_typemax>500</group_typemax>
+		         </customer_group_typemax>
+		         <customer_group_min elemtype="name" elemvalue="MinTradeSize">
+		               <group_min>0.1</group_min>
+		         </customer_group_min>
+		         <customer_group_max elemtype="name" elemvalue="MaxTradeSize">
+		               <group_max>50</group_max>
+		         </customer_group_max>
+		         <customer_group_initialvalue elemtype="name" elemvalue="InitialValue">
+		               <group_initialvalue>5000</group_initialvalue>
+		         </customer_group_initialvalue>
+		         <customer_group_callvalue elemtype="name" elemvalue="CallValue">
+		               <group_callvalue>3000</group_callvalue>
+		         </customer_group_callvalue>
+		         <customer_group_callhvalue elemtype="name" elemvalue="CallHedgeValue">
+		               <group_callhvalue>6000</group_callhvalue>
+		         </customer_group_callhvalue>
+		         <customer_group_cutvalue elemtype="name" elemvalue="CutValue">
+		               <group_cutvalue>1000</group_cutvalue>
+		         </customer_group_cutvalue>
+		         <customer_group_limitcallvalue elemtype="name" elemvalue="StopLimitCallValue">
+		               <group_limitcallvalue>0</group_limitcallvalue>
+		         </customer_group_limitcallvalue>
+		         <customer_group_limitcallhvalue elemtype="name" elemvalue="StopLimitCallHedgeValue">
+		               <group_limitcallhvalue>0</group_limitcallhvalue>
+		         </customer_group_limitcallhvalue>
+		         <customer_group_limitpoint elemtype="name" elemvalue="LimitOrderPointLimit">
+		               <group_limitpoint>5</group_limitpoint>
+		         </customer_group_limitpoint>
+		         <customer_group_limitnumber elemtype="name" elemvalue="LimitOrderNumberLimit">
+		               <group_limitnumber>50</group_limitnumber>
+		         </customer_group_limitnumber>
+		         <customer_group_rebate elemtype="name" elemvalue="RebateValue">
+		               <group_rebate>0</group_rebate>
+		         </customer_group_rebate>
+		         <customer_group_crebate elemtype="name" elemvalue="CommissionRebateValue">
+		               <group_crebate>10</group_crebate>
+		         </customer_group_crebate>
+		         <submit_btn elemtype="id" elemvalue="add_sub"></submit_btn>
+                 <suc_info > <ei>新增成功</ei> </suc_info>
+		    </customer_group_add>
     </manager>
 </wisetrader>	
