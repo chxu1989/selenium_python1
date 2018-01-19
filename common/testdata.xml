@@ -164,5 +164,27 @@
 			     <add_btn elemtype="xpath" elemvalue="//input[@value=u'提交']"></add_btn>
 			 </sales_add_func>
 		</sales_manage>
+		<rate_manage attach_url="Manager/System/CurrencyRate">
+		     <rate_add_func>
+		         <rate_currency elemtype="name" elemvalue="ProductId">
+		              <currency>1</currency>
+		         </rate_currency>
+		         <rate_cur_err elemtype="id" elemvalue="MessageValue">
+			          <ei>该货币已存在</ei>
+			    </rate_cur_err>
+			    <rate_enable elemtype="name" elemvalue="Enable">
+			         <enable>0</enable>
+			    </rate_enable>
+		        <rate_to elemtype="name" elemvalue="RateToUSDMid">
+		             <rate>1</rate>
+		        </rate_to>
+                <rate_up elemtype="name" elemvalue="IsUpdata">
+                     <up>1</up>
+                </rate_up> 
+                <submit_btn elemtype="xpath" elemvalue="/html/body/form[1]/div/div/div[3]/button[1]"></submit_btn>
+                <suc_info ></suc_info>   
+		     </rate_add_func>
+		     <add_btn elemtype="xpath" elemvalue="/html/body/h3/span/button"></add_btn>   
+		</rate_manage>
     </manager>
 </wisetrader>	
